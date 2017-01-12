@@ -18,13 +18,9 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.js"></script>
         <script>
             $(document).ready(function() {
-
-                // page is now ready, initialize the calendar...
-
                 $('#calendar').fullCalendar({
-                    // put your options and callbacks here
-                })
-
+                    events: '/api/feed.php'
+                });
             });
         </script>
     </head>
